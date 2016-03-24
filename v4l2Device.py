@@ -92,6 +92,15 @@ class v4l2Device(Device):
 	def get_lastr(self):
 		return self.r
 
+	# Attribute: rgb ----------------------------------------------------------
+
+	# rgb = attribute(label="RGB image", dtype=bool,
+	# 				access=AttrWriteType.READ, fget="get_rgb",
+	# 				doc="If image is captured in RGB format")
+
+	# def get_rgb(self):
+	# 	return not self.cap.get(cv2.cv.CV_CAP_PROP_CONVERT_RGB)
+
 	# Attribute: codec --------------------------------------------------------
 
 	# codec = attribute(label="Codec", dtype=str,
